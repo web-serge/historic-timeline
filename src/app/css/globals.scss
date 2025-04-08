@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:global {
+  @import '~swiper/css';
+  @import '~swiper/css/navigation';
+  @import '~swiper/css/pagination';
+}
+
+:root {
+  --color-background: hsl(228, 33%, 97%);
+  --color-foreground: hsl(219, 30%, 37%);
+  --color-primary: hsl(219, 84%, 58%);
+  --color-secondary: hsl(329, 82%, 65%);
+  --color-divider: hsla(219, 30%, 37%, 0.1);
+  --color-divider-bold: hsla(219, 30%, 37%, 0.2);
+  --color-divider-button: hsla(219, 30%, 37%, 0.5);
+
+  --layout-divider-width: 1px;
+}
+
+html {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: 'PT Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}

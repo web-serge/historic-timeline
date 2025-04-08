@@ -1,0 +1,18 @@
+.circle-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 10;
+
+  .circle {
+    border: 1px solid var(--color-divider-bold);
+    border-radius: 50%;
+    position: relative;
+  }
+}
+
+.dot-wrapper {
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+}

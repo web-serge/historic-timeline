@@ -1,0 +1,32 @@
+@import '@/app/css/mixins.scss';
+
+.wrapper {
+  @include flex(column, $jus: center);
+  width: 100%;
+  height: 100svh;
+  border-width: 0 var(--layout-divider-width);
+  border-color: var(--color-divider);
+  border-style: solid;
+  position: relative;
+
+  @media (max-width: 1100px) {
+    border: none;
+    gap: 0;
+  }
+}
+
+.middle-separator {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100%;
+  z-index: 0;
+  background-color: var(--color-divider);
+
+  @media (max-width: 1100px) {
+    display: none;
+  }
+}
