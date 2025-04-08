@@ -5,7 +5,6 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import webpack, { Configuration } from 'webpack';
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
 import { BuildOptions } from './types/build.types';
 
@@ -44,11 +43,6 @@ export const buildPlugins = (
         chunkFilename: 'css/[name].[contenthash:8].css',
       }),
     );
-  }
-
-  if (options.bundleAnalyze) {
-    // Анализ размера бандла сборки
-    plugins.push(new BundleAnalyzerPlugin());
   }
 
   return plugins;
